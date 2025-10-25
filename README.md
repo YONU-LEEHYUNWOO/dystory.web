@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 도연 Story - 당신의 특별한 이야기를 담은 청첩장
 
-# Run and deploy your AI Studio app
+## 🌐 라이브 데모
+- **Streamlit Cloud**: [https://dystory-web.streamlit.app](https://dystory-web.streamlit.app)
+- **GitHub 저장소**: [https://github.com/YONU-LEEHYUNWOO/dystory.web](https://github.com/YONU-LEEHYUNWOO/dystory.web)
 
-This contains everything you need to run your app locally.
+## 🚀 빠른 시작
+```bash
+# 의존성 설치
+pip install -r requirements.txt
 
-View your app in AI Studio: https://ai.studio/apps/drive/1E8e59R6zZqbdpJGFPJP8eGQYTw26LCi7
+# 환경변수 설정
+export GOOGLE_API_KEY="your_api_key_here"
 
-## Run Locally
+# 앱 실행
+streamlit run app.py
+```
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🎯 주요 기능
+- AI 기반 청첩장 디자인 생성
+- 스토리 기반 맞춤형 디자인
+- 디자인 갤러리
+- 주문 시스템
