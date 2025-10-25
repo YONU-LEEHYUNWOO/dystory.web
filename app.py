@@ -17,11 +17,19 @@ st.set_page_config(
 )
 
 # Gemini API 설정
-if not os.getenv("GOOGLE_API_KEY"):
-    st.error("GOOGLE_API_KEY 환경변수를 설정해주세요.")
-    st.stop()
+api_key = os.getenv("GOOGLE_API_KEY")
+if not api_key:
+    # Streamlit Cloud의 secrets에서 읽기 시도
+    try:
+        api_key = st.secrets["GOOGLE_API_KEY"]
+    except:
+        st.warning("⚠️ GOOGLE_API_KEY가 설정되지 않았습니다. 데모 모드로 실행됩니다.")
+        api_key = None
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+if api_key:
+    genai.configure(api_key=api_key)
+else:
+    st.info("🔧 데모 모드: API 키 없이 실행 중입니다.")
 
 # 세션 상태 초기화
 if 'current_page' not in st.session_state:
