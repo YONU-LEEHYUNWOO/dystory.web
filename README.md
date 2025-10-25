@@ -1,7 +1,8 @@
 # 도연 Story - 당신의 특별한 이야기를 담은 청첩장
 
 ## 🌐 라이브 데모
-- **Streamlit Cloud**: [https://dystory-web.streamlit.app](https://dystory-web.streamlit.app)
+- **Streamlit Cloud**: [https://share.streamlit.io/] 
+[https://dystoryweb-jwfkjvjkhxttbgfjyagb5f.streamlit.app/](https://dystoryweb-jwfkjvjkhxttbgfjyagb5f.streamlit.app/)
 - **GitHub 저장소**: [https://github.com/YONU-LEEHYUNWOO/dystory.web](https://github.com/YONU-LEEHYUNWOO/dystory.web)
 
 ## 🚀 빠른 시작
