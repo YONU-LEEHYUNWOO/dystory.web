@@ -39,9 +39,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Deploy to Streamlit Cloud
-      uses: streamlit/streamlit-action@main
-      with:
-        app_file: app.py
-        streamlit_token: ${{ secrets.STREAMLIT_TOKEN }}
-        streamlit_app_url: ${{ secrets.STREAMLIT_APP_URL }}
+      run: |
+        echo "Streamlit Cloud 배포는 수동으로 진행됩니다."
+        echo "https://share.streamlit.io에서 앱을 배포하세요."
 
